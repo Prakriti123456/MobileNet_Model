@@ -18,7 +18,7 @@ var prev_result = "";
 
 function gotResult(error, results) {
   if (error) {
-    console.error(error);
+    console.log(error);
   } else {
     if ((results[0].confidence > 0.5) && (prev_result != results[0].label)) {
       console.log(results);
@@ -26,7 +26,7 @@ function gotResult(error, results) {
       var synth = window.speechSyntheseis;
       speak_d = 'Object detected is - ' + results[0].label;
       var utterThis = new SpeechSynthesisUtterance(speak_d);
-      synth.speak(utterThis)
+      synth.speak(utterThis);
 
       document.getElementById("result_object_name").innerHTML = results[0].label;
       document.getElementById("result_object_accuracy").innerHTML = results[0].confidence.toFixed(3);
