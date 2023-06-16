@@ -6,6 +6,7 @@
   }
 
   .heading_div {
+    font-size: 18px;
     float: none;
     padding: 10px;
     background: white;
@@ -15,7 +16,7 @@
   }
 
   .heading_div2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .result_para_tag {
@@ -31,7 +32,7 @@
     border: 5px solid whitesmoke;
     border-radius: 20px;
     box-shadow: 6px 6px 6px darkslategrey;
-    margin-top: 400px;
+    margin-top: 160px;
   }
 
   .copy_right_footer {
